@@ -25,7 +25,10 @@ public class Elice2 {
             for(int l=0;l<arr3.length;l++){
                 arr4[l] = Integer.parseInt(arr3[l]);
             }
-            bw.write(arr4[k]);
+            Arrays.sort(arr4);
+            
+            bw.write(String.valueOf(arr4[k]));
+            bw.newLine();
         }
         bw.flush();
     }
